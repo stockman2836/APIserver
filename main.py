@@ -41,7 +41,7 @@ async def get_status():
     # Получаем текущий статус системы безопасности
     return global_status
 '''
-
+'''
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -59,8 +59,13 @@ def update_security():
         "message": "Data received successfully",
         # Add any other data you want to send back
     }
+'''
 
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello! World!!!"
     return jsonify(response)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
