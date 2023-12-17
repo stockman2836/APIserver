@@ -1,4 +1,4 @@
-'''
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 
@@ -40,7 +40,7 @@ async def update_status(status: SystemStatus):
 async def get_status():
     # Получаем текущий статус системы безопасности
     return global_status
-'''
+
 '''
 from flask import Flask, request, jsonify
 
@@ -59,7 +59,7 @@ def update_security():
         "message": "Data received successfully",
         # Add any other data you want to send back
     }
-'''
+
 
 from flask import Flask
 
@@ -69,3 +69,4 @@ app = Flask(__name__)
 def hello():
     return "Hello! World!!!"
     return jsonify(response)
+'''
